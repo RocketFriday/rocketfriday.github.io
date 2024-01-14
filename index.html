@@ -1,7 +1,257 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>...</h1>
-<p>...</p>
-</body>
-</html>
+<div defining technical stuff>
+  <html lang="en"><head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Home">
+    <meta property="og:type" content="website">
+</div>
+<div defining normal stuff>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <!-- ^borrow font from google^ -->
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  
+</div>
+<div CSS>
+<!--temporarily using css in the file so we don't have to work with two file (style.css & index.html)-->
+<style>
+  *
+{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(30, 30, 30);
+}
+ img{
+   padding: 0px;
+}
+table {
+  color: #f1f1f1;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid hsl(0, 0%, 30%);
+  text-align: left;
+  padding: 8px;
+  
+}
+
+tr:nth-child(even) {
+  background-color: hsl(0, 0%, 12%);
+}
+/* turn off bold for the header */
+h1, h2, h3, h4, h5, h6, h7
+{
+font-weight: normal;
+}
+tr:nth-child(odd) {
+  background-color: #3c4d64;
+}
+  .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .container {
+      position: relative;
+      text-align: center;
+      color: white;
+    }  
+/* Style the header */
+.header {
+  font-size: 140%;
+  font-family: "Helvetica", sans-serif;
+  transition: color 1s;
+  font-style:normal;
+  background-color: #3c4d64;
+  color: #f2f2f2;
+  padding: 20px;
+  text-align: center; 
+}
+.FAQ {
+  font-size: 140%;
+  font-family: "Helvetica", sans-serif;
+  font-style:normal;
+  background-color:rgb(30, 30, 30);
+  color: #f2f2f2;
+  padding: 20px;
+  text-align: center; 
+}
+
+/* Style the top paragraph */
+.top-par {
+  color: #f2f2f2;
+  text-align: center;
+  overflow: hidden;
+  font-size: 120%;
+  font-family: "Helevtica", sans-serif;
+  font-style: italic;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* All link color */
+a:link {
+  color: rgb(64, 155, 241);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(2, 127, 204);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(100, 118, 123);
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: underline;
+}
+.button1 {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* FANCY BUTTON */
+.button {
+  background-color: #428eae;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+}
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.756), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #52b1da;
+  color: white;
+}
+/* FANCY BUTTON */
+
+
+/* HOVER IMAGE */
+.zoom {
+background-color: rgba(0, 0, 0, 0.675);
+transition: transform .2s; /* Animation */
+width: fit-content;
+height: fit-content;
+margin:auto;
+}
+
+/* (500% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+.zoom:hover {transform: scale(5);}
+/* HOVER IMAGE */
+
+
+
+/* IMAGE SIDEBYSIDE */
+.row {
+  display: flex;
+}
+
+.column {
+  padding-left: 100px;
+}
+/* IMAGE SIDEBYSIDE */
+
+</style>
+</div>
+<div HTML>
+  <html>
+    <head>
+      <body>
+        <div class="header">
+          <div class="container">
+            <img src="smol.png" width="200" height="200" alt="">
+            <div class="centered">
+              <h1>Smol Adventure</h1>
+            </div>
+          </div> 
+        </div>
+        <div class="top-par">
+          <p><div>Home of the <a href="https://play.google.com/store/apps/details?id=com.RF.SmolAdvent">Smollest Adventure!</a></p></div>
+          <P>Smol Adventure is a mobile, fantasy adventure game rated E for everyone.</P>
+        </div>
+    <div><b></b></div>
+    <br> <br> <br> <br> <br> <br> <br> <br>
+ <div class="FAQ">
+  <img src="magic_icon.png" width="100" height="100" alt=""> 
+  <h2>FAQ</h2> <!--this does nothing >>>--> <h2 style="font-size:20px;"></h2>
+ </div>
+    <table>
+        <tr>
+          <th>Problem</th>
+          <th>Solution</th>
+        </tr>
+        <tr>
+          <td>How can I get early access?</td>
+          <td>  
+            <div HOVER0>
+              <div class="row">
+                <div class="column">
+                  <div class="zoom"><img src="sub.jpg" alt="" style="width:200%;max-width:125px;"></div>
+                </div>
+              </div> 
+            </div>
+          </td>  
+        </tr>
+        <tr><td>Where do I redeem a promo code?</td>
+          <td>
+            <div HOVER1>
+              <div class="row">
+                <div class="column">
+                  Step: 1
+                  <div class="zoom"><img src="redeem0.jpg" alt="" style="width:100%;max-width:50px;"></div>
+                </div>
+                <div class="column">
+                  Step: 2
+                  <div class="zoom"><img src="redeem1.jpg" alt="" style="width:100%;max-width:50px;"></div>
+                </div>
+                <div class="column">
+                  Step: 3
+                  <div class="zoom"><img src="redeem2.jpg" alt="" style="width:100%;max-width:50px"></div>
+                </div>
+              </div> 
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Where can I download Smol Adventure?</td>
+          <td><div FANCY BUTTON><button class="button" onclick="window.location.href='https://play.google.com/store/apps/details?id=com.RF.SmolAdvent';">Here</button></div></td>
+        </tr>
+        <tr>
+          <td>I'm stuck on the island!</td>
+          <td>This is the trial island! Please consider supporting the game and gain early access to the full world during early developement!</td>
+        </tr>
+       </table>
+      <br> <br> <br> <br> <br> <br> <br> <br>    
+    </body>
+  </head>
+  </html> 
+</div>
